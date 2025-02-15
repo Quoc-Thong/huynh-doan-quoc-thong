@@ -77,10 +77,7 @@ export const FancyForm = () => {
 
   const hanldeOnClickSwap = () => {
     success();
-    currencyForm.setFieldsValue({
-      input: 1,
-      output: selectedCurrency?.price,
-    });
+    currencyForm.resetFields();
   };
 
   const handleOnChangeInput = useCallback(
@@ -111,8 +108,7 @@ export const FancyForm = () => {
           <Form.Item
             label={"Input amount"}
             name={["input"]}
-            className="w-full mb-0"
-            style={{ marginBottom: 0 }}
+            style={{ marginBottom: 0, width: "100%" }}
           >
             <InputNumber
               className="w-full"
@@ -127,8 +123,7 @@ export const FancyForm = () => {
           <Form.Item
             label={"Output amount"}
             name={["output"]}
-            className="w-full mb-0"
-            style={{ marginBottom: 0 }}
+            style={{ marginBottom: 0, width: "100%" }}
           >
             <InputNumber
               className="w-full"
