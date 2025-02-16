@@ -1,17 +1,17 @@
 /*
-- FormattedWalletBalance sử dụng extends để kế thừa 2 thuộc tính từ WalletBalance
-- cần khai báo interface BoxProps
-- thiếu export default WalletPage 
-- chưa khai báo biến children trong Props
-- thiếu import hoặc tạo hook trong page của 2 hook dưới
-- thiếu import useMemo từ React
-- khai báo thêm biến blockchain trong interface WalletBalance
-- chưa khai báo biến lhsPriority thay đổi bằng so sánh ternary operator
-- khai báo biến formattedBalances mà chưa được sử dụng
-- chưa import component WalletRow, khai bao classes từ module css
-- thêm .toFixed() cho formatted cần thêm số để làm tròn số 
+- `FormattedWalletBalance` uses `extends` to inherit two properties from `WalletBalance`.
+- Need to declare the `BoxProps` interface.
+- Missing `export default WalletPage`.
+- The `children` variable is not declared in `Props`.
+- Missing imports or hook definitions for the two hooks in the page.
+- Missing import of `useMemo` from React.
+- Need to declare the `blockchain` variable in the `WalletBalance` interface.
+- The `lhsPriority` variable has not been declared, which should change based on a ternary operator comparison.
+- The `formattedBalances` variable is declared but not used.
+- The `WalletRow` component and CSS module classes are not imported.
+- `.toFixed()` should be added to `formatted` with a specified number to round the value.
 
-+ Sau đây là file chỉnh sửa lại
++ Below is the revised file
 */
 
 import classes from "./styles.module.less";
